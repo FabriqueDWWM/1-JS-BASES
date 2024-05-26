@@ -1,0 +1,39 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+a {
+	color: #ff0000;
+	text-decoration: none;
+}
+a:hover {
+	color: #990000;
+}
+ul {
+	padding: 0;
+	list-style: none;
+}
+nav > ul {
+	display: flex;
+	gap: 100px;
+}
+nav li {
+	color: #ff0000;
+	font-size: 21px;
+}
+nav li:hover {
+	color: #990000;
+	cursor: pointer;
+}
+nav li ul {
+	background-color: aqua;
+	visibility: hidden;
+	position: absolute;
+	transition: all 0.1s ease-in-out;
+}
+nav > ul > li:hover ul {
+	visibility: visible;
+}
